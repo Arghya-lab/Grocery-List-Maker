@@ -1,174 +1,173 @@
-@import url('https://fonts.googleapis.com/css2?family=Francois+One&family=Oxygen&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Francois+One&family=Oxygen&display=swap");
 
 /* font-family: 'Francois One', sans-serif; */
 /* font-family: 'Oxygen', sans-serif; */
 
 :root {
-    --text-color : #37306B;
-    --bg-color : #ECF2FF;
-    --submit-color-hover : #E5D1FA;
-    --submit-color : #c793ff;
-    --item-bg : #f5f8ff;
-    --delete-color : #f10862;
-    --edit-color : #09b02a;
-    --danger-color : #ca0a53;
-    --danger-bg-color : #ff0a0a3d;
-    --success-color : #038d1e;
-    --success-bg-color : #29cb293d;
+  --text-color: #37306b;
+  --bg-color: #ecf2ff;
+  --submit-color-hover: #e5d1fa;
+  --submit-color: #c793ff;
+  --item-bg: #f5f8ff;
+  --delete-color: #f10862;
+  --edit-color: #09b02a;
+  --danger-color: #ca0a53;
+  --danger-bg-color: #ff0a0a3d;
+  --success-color: #038d1e;
+  --success-bg-color: #29cb293d;
 }
 
 *,
 *::after,
 *::before {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: var(--bg-color);
-    /* border: 1px solid red; */
+  background-color: var(--bg-color);
+  /* border: 1px solid red; */
 }
 
 main {
-    border: 2px solid whitesmoke;
-    border-radius: 1rem;
-    margin: 20vh 1rem auto;
-    max-width: 512px;
-    background-color: rgb(255, 251, 255);
-    font-size: 1rem;
-    box-shadow: 0 3px 7px gray;
+  border: 2px solid whitesmoke;
+  border-radius: 1rem;
+  margin: 20vh 1rem auto;
+  max-width: 512px;
+  background-color: rgb(255, 251, 255);
+  font-size: 1rem;
+  box-shadow: 0 3px 7px gray;
 }
 
-@media screen and (min-width : 540px) {
-    main {
-        margin: 20vh auto;
-    }
+@media screen and (min-width: 540px) {
+  main {
+    margin: 20vh auto;
+  }
 }
 
 h1 {
-    font-size: 1.5rem;
-    font-family: 'Francois One', sans-serif;
-    color: var(--text-color);
-    letter-spacing: .16em;
-    word-spacing: .36em;
-    text-align: center;
-    margin: 0 auto 1.6rem;
+  font-size: 1.5rem;
+  font-family: "Francois One", sans-serif;
+  color: var(--text-color);
+  letter-spacing: 0.16em;
+  word-spacing: 0.36em;
+  text-align: center;
+  margin: 0 auto 1.6rem;
 }
 
 form {
-    margin: 0 auto 2rem;
-    max-width: 80%;
-    display: grid;
-    grid-template-columns: 7fr 2fr;
-    place-items: center;
-
+  margin: 0 auto 2rem;
+  max-width: 80%;
+  display: grid;
+  grid-template-columns: 7fr 2fr;
+  place-items: center;
 }
 
 form input,
 form button {
-    border: transparent;
-    display: block;
-    height: 2rem;
-    width: 100%;
+  border: transparent;
+  display: block;
+  height: 2rem;
+  width: 100%;
 }
 
 form input {
-    background-color: var(--bg-color);
-    border-radius: .5em 0 0 .5em;
-    padding-left: 1rem;
-    letter-spacing: .10em;
+  background-color: var(--bg-color);
+  border-radius: 0.5em 0 0 0.5em;
+  padding-left: 1rem;
+  letter-spacing: 0.1em;
 }
 
 form button {
-    text-transform: capitalize;
-    color: var(--text-color);
-    background-color: var(--submit-color);
-    border-radius: 0 .5em .5em 0;
-    cursor: pointer;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    letter-spacing: .16em;
-    font-weight: 500;
+  text-transform: capitalize;
+  color: var(--text-color);
+  background-color: var(--submit-color);
+  border-radius: 0 0.5em 0.5em 0;
+  cursor: pointer;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 0.16em;
+  font-weight: 500;
 }
 
 form button:hover {
-    background-color: var(--submit-color-hover);
-    transform: scaleX(.96);
+  background-color: var(--submit-color-hover);
+  transform: scaleX(0.96);
 }
 
 .alert {
-    margin: 1.44rem auto .4rem;
-    text-align: center;
-    width: 80%;
-    height: 1rem;
-    text-transform: capitalize;
-    border-radius: .32rem;
+  margin: 1.44rem auto 0.4rem;
+  text-align: center;
+  width: 80%;
+  height: 1rem;
+  text-transform: capitalize;
+  border-radius: 0.32rem;
 }
 
 .alert-danger {
-    color: var(--danger-color);
-    background: var(--danger-bg-color);
+  color: var(--danger-color);
+  background: var(--danger-bg-color);
 }
 
 .alert-success {
-    color: var(--success-color);
-    background: var(--success-bg-color);
+  color: var(--success-color);
+  background: var(--success-bg-color);
 }
 
 .item-container {
-    display: none;
+  display: none;
 }
 
 .show-container {
-    padding-bottom: .5rem;
-    align-items: center;
-    display: block;
+  padding-bottom: 0.5rem;
+  align-items: center;
+  display: block;
 }
 
 .item {
-    width: 80%;
-    margin: 1.28rem auto;
-    padding-left: .64rem;
-    background: var(--item-bg);
-    display: flex;
-    justify-content: space-between;
+  width: 80%;
+  margin: 1.28rem auto;
+  padding-left: 0.64rem;
+  background: var(--item-bg);
+  display: flex;
+  justify-content: space-between;
 }
 
 .item-name {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: var(--text-color);
-    letter-spacing: .1em;
-    font-weight: 500;
-    word-wrap: break-word;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: var(--text-color);
+  letter-spacing: 0.1em;
+  font-weight: 500;
+  word-wrap: break-word;
 }
 
 .btn-container {
-    display: flex;
+  display: flex;
 }
 .btn-container button {
-    background: transparent;
-    margin: 0 .32rem;
-    cursor: pointer;
-    border: transparent;
+  background: transparent;
+  margin: 0 0.32rem;
+  cursor: pointer;
+  border: transparent;
 }
 
 .edit {
-    color: var(--edit-color);
+  color: var(--edit-color);
 }
 
 .delete {
-    color: var(--delete-color);
+  color: var(--delete-color);
 }
 
 .clear-btn {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-transform: capitalize;
-    width: 36%;
-    height: 1.28rem;
-    display: block;
-    margin: 0 auto;
-    background-color: var(--danger-bg-color);
-    border: transparent;
-    border-radius: .32rem;
-    cursor: pointer;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-transform: capitalize;
+  width: 36%;
+  height: 1.28rem;
+  display: block;
+  margin: 0 auto;
+  background-color: var(--danger-bg-color);
+  border: transparent;
+  border-radius: 0.32rem;
+  cursor: pointer;
 }
