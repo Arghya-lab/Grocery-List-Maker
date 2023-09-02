@@ -25,6 +25,7 @@ window.addEventListener("DOMContentLoaded", setupItems());
 function addItem(e) {
   e.preventDefault();
   const value = itemInput.value;
+  console.log(value);
   const id = new Date().getTime().toString();
 
   //for add new item
@@ -89,11 +90,11 @@ function setBackToDefault() {
 //display alert
 function displayAlert(msg, action) {
   alert.textContent = msg;
-  alert.classList.add(`alert-${action}`);
+  alert.classList.add(`alert__${action}`);
 
   setTimeout(function () {
     alert.textContent = "";
-    alert.classList.remove(`alert-${action}`);
+    alert.classList.remove(`alert__${action}`);
   }, 1000);
 }
 
@@ -172,22 +173,22 @@ function creatsListItems(id, value) {
   elem.setAttributeNode(attr);
   elem.classList.add("item");
   elem.innerHTML = `
-    <p class="item-name">${value}</p>
-      <div class="btn-container">
-        <button class="edit">
-          <i class="fa-regular fa-pen-to-square"></i>
-        </button>
-        <button class="delete">
-          <i class="fa-solid fa-trash-can"></i>
-        </button>
-      </div>
+    <p class="item__name">${value}</p>
+    <div class="item__btn-container">
+      <button class="item__edit-btn">
+        <i class="fa-regular fa-pen-to-square"></i>
+      </button>
+      <button class="item__delete-btn">
+        <i class="fa-solid fa-trash-can"></i>
+      </button>
+    </div>
     `;
   //add eventlistner to both button
-  const editBtn = elem.querySelector(".edit");
+  const editBtn = elem.querySelector(".item__edit-btn");
   editBtn.addEventListener("click", editItem);
-  const deleteBtn = elem.querySelector(".delete");
+  const deleteBtn = elem.querySelector(".item__delete-btn");
   deleteBtn.addEventListener("click", deleteItem);
-
+  console.log(elem);
   //append child
   itemList.appendChild(elem);
 }
