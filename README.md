@@ -1,4 +1,3 @@
-
 # List Me WebApp
 
 This web app will assist you in creating, organizing, and tracking your list.
@@ -12,8 +11,7 @@ This web app will assist you in creating, organizing, and tracking your list.
 
 
 ## Roadmap
-- [ ] Add items to the list, specifying the item name and description (if required).
-- [ ] Add shareable list.
+- [ ] Add import export lists.
 - [ ] Mark items as favorites for quick addition to your list in the future.
 - [ ] Change the web app into a Chrome extension.
 
@@ -32,8 +30,6 @@ Contributions are welcome! If you'd like to contribute to the project, please fo
 - Implement your changes, following the project's coding style.
 - Test thoroughly and ensure the application runs without errors.
 - Create a pull request detailing your changes for review.
-
-
 
 
 ## Contact
